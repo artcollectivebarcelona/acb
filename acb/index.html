@@ -1,0 +1,752 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>ACB — Art Collective</title>
+    <meta name="description" content="A contemporary art collective showcasing exhibitions, artists, and new works." />
+
+    <meta property="og:title" content="ACB — Art Collective" />
+    <meta property="og:description" content="A contemporary art collective showcasing exhibitions, artists, and new works." />
+    <meta property="og:type" content="website" />
+    <meta property="og:image" content="/og.jpg" />
+    <meta name="twitter:card" content="summary_large_image" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=Playfair+Display:wght@400;500;600&display=swap" rel="stylesheet" />
+
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            colors: {
+              brand: {
+                DEFAULT: '#111111',
+                soft: '#6b7280',
+                accent: '#bfa98d'
+              }
+            },
+            fontFamily: {
+              sans: ['Inter', 'system-ui', 'sans-serif'],
+              serif: ['\"Playfair Display\"', 'Georgia', 'serif']
+            },
+            container: {
+              center: true,
+              padding: '1rem'
+            }
+          }
+        }
+      }
+    </script>
+    <style>
+      html { scroll-behavior: smooth; }
+    </style>
+  </head>
+  <body class="bg-white text-neutral-900 antialiased">
+    <div id="splash" class="fixed inset-0 z-[9999] flex items-center justify-center bg-white">
+      <div class="px-6 text-center select-none">
+        <div class="text-[7vw] leading-[0.9] font-serif tracking-tight" style="font-variant-ligatures: none; color: #E8B4B8;">
+          <span id="line1" class="block"></span>
+          <span id="line2" class="block"></span>
+          <span id="line3" class="block"></span>
+        </div>
+        <div class="mt-4 text-[3.2vw] md:text-[1.4vw] font-semibold tracking-tight" style="color: #E8B4B8;">
+          <span id="tagline"></span>
+        </div>
+      </div>
+    </div>
+
+    <header class="border-b">
+      <div class="container max-w-[1200px] flex items-center justify-between py-4">
+        <a href="#top" class="text-xl font-serif">ART COLLECTIVE BARCELONA</a>
+        <nav class="hidden md:flex gap-6 text-sm text-neutral-700">
+          <a href="#classes" class="hover:text-neutral-900">Classes &amp; Workshops</a>
+          <a href="#about" class="hover:text-neutral-900">About</a>
+          <a href="#sale" class="hover:text-neutral-900">Art for Sale</a>
+          <a href="#testimonials" class="hover:text-neutral-900">Testimonials</a>
+          <a href="#contact" class="hover:text-neutral-900">Contact</a>
+        </nav>
+      </div>
+    </header>
+
+    <main id="top">
+      <section class="container max-w-[1200px] grid md:grid-cols-2 gap-8 py-16 md:py-24">
+        <div class="flex flex-col justify-center">
+          <h1 class="text-4xl md:text-6xl leading-tight font-serif">
+            Contemporary works by independent artists
+          </h1>
+          <p class="mt-4 text-neutral-600 max-w-prose">
+            ACB curates collaborative exhibitions, residencies, and editions.
+          </p>
+          <div class="mt-6 flex gap-4">
+            <a href="#exhibitions" class="px-5 py-2.5 border border-neutral-900">View exhibitions</a>
+            <a href="#gallery" class="px-5 py-2.5 border border-neutral-300 hover:border-neutral-900">Explore gallery</a>
+          </div>
+        </div>
+        <div class="relative aspect-[4/3] w-full overflow-hidden bg-neutral-100">
+          <img
+            src="https://images.unsplash.com/photo-1549880338-65ddcdfd017b?q=80&w=2000&auto=format&fit=crop"
+            alt="Featured artwork"
+            class="h-full w-full object-cover"
+            loading="eager"
+          />
+        </div>
+      </section>
+
+
+      <section id="classes" class="container max-w-[1200px] py-16 border-t">
+        <h2 class="text-2xl md:text-3xl font-serif">Art Classes & Painting Workshops in Barcelona</h2>
+        
+        <!-- Hero Section -->
+        <div class="mt-8 mb-12">
+          <div class="relative aspect-[16/9] overflow-hidden bg-neutral-100 mb-8">
+            <img 
+              src="https://images.unsplash.com/photo-1549880181-56a44cf4a9a7?q=80&w=2000&auto=format&fit=crop" 
+              alt="Students painting in studio" 
+              class="h-full w-full object-cover"
+            />
+          </div>
+          <div class="text-center">
+            <h3 class="text-3xl md:text-4xl font-serif mb-4">Join Oil Painting Classes & Creative Workshops in Barcelona</h3>
+            <p class="text-lg text-neutral-600 mb-6 max-w-3xl mx-auto">
+              Learn classical and contemporary techniques in a friendly, supportive studio environment.
+            </p>
+            <button class="px-8 py-3 bg-neutral-900 text-white hover:bg-neutral-800 transition-colors">
+              Book Your Spot
+            </button>
+          </div>
+        </div>
+
+        <!-- Weekly Classes -->
+        <div class="mb-12">
+          <h3 class="text-2xl font-serif mb-4">Weekly Oil Painting Classes</h3>
+          <p class="text-neutral-600 mb-6 max-w-3xl">
+            Whether you're picking up a brush for the first time or refining advanced techniques, these weekly classes are tailored for all levels. Every student receives personal guidance and individual critique, ensuring steady growth at their own pace.
+          </p>
+          
+          <div class="bg-neutral-50 p-6 rounded-lg">
+            <div class="grid md:grid-cols-2 gap-6">
+              <div>
+                <h4 class="font-semibold mb-2">Schedule & Location</h4>
+                <p class="text-neutral-600 mb-2">📅 Mondays & Wednesdays, 5:30 PM – 8:00 PM</p>
+                <p class="text-neutral-600">📍 Artist's Studio, Poblenou, Barcelona</p>
+              </div>
+              <div>
+                <h4 class="font-semibold mb-2">Pricing</h4>
+                <div class="flex items-center gap-2 mb-2">
+                  <span class="text-neutral-400 line-through">€35</span>
+                  <span class="text-2xl font-bold text-green-600">€25</span>
+                  <span class="text-sm text-neutral-600">per class</span>
+                </div>
+                <p class="text-sm text-red-600 font-medium">Limited-time launch offer!</p>
+                <p class="text-sm text-neutral-600 mt-1">Reserve now to lock in your price</p>
+              </div>
+            </div>
+            <button class="mt-4 px-6 py-2 border border-neutral-900 hover:bg-neutral-900 hover:text-white transition-colors">
+              Reserve Your Spot
+            </button>
+          </div>
+        </div>
+
+        <!-- Upcoming Workshops -->
+        <div class="mb-12">
+          <h3 class="text-2xl font-serif mb-4">Upcoming Art Workshops</h3>
+          <p class="text-neutral-600 mb-6 max-w-3xl">
+            We regularly host special workshops on portrait painting, alla prima, color mixing, and themed art & wine evenings. Each workshop is an opportunity to dive deeper into a specific technique or style.
+          </p>
+          <div class="bg-neutral-50 p-6 rounded-lg text-center">
+            <p class="text-neutral-600 mb-4">🎨 Sign up to our mailing list and be the first to know when new workshops are announced!</p>
+            <button class="px-6 py-2 border border-neutral-900 hover:bg-neutral-900 hover:text-white transition-colors">
+              Get Notified About Upcoming Workshops
+            </button>
+          </div>
+        </div>
+
+        <!-- Why Join Us -->
+        <div class="mb-12">
+          <h3 class="text-2xl font-serif mb-6">Why Join Us?</h3>
+          <div class="grid md:grid-cols-3 gap-6">
+            <div class="text-center">
+              <div class="text-4xl mb-3">🖌️</div>
+              <h4 class="font-semibold mb-2">All Levels Welcome</h4>
+              <p class="text-neutral-600 text-sm">Tailored instruction and feedback for beginners to advanced artists.</p>
+            </div>
+            <div class="text-center">
+              <div class="text-4xl mb-3">🎨</div>
+              <h4 class="font-semibold mb-2">Learn by Doing</h4>
+              <p class="text-neutral-600 text-sm">Hands-on, practical sessions that inspire confidence.</p>
+            </div>
+            <div class="text-center">
+              <div class="text-4xl mb-3">👥</div>
+              <h4 class="font-semibold mb-2">Creative Community</h4>
+              <p class="text-neutral-600 text-sm">Connect with fellow art lovers in a friendly studio space.</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Final CTA -->
+        <div class="text-center bg-neutral-900 text-white p-8 rounded-lg">
+          <h3 class="text-2xl font-serif mb-4">Ready to Start Your Art Journey?</h3>
+          <p class="text-neutral-300 mb-6">Join our community of artists and discover your creative potential.</p>
+          <button class="px-8 py-3 bg-white text-neutral-900 hover:bg-neutral-100 transition-colors">
+            Book Your Spot Today
+          </button>
+        </div>
+      </section>
+
+      <section id="about" class="container max-w-[1200px] py-16 border-t">
+        <h2 class="text-2xl md:text-3xl font-serif">About Us</h2>
+        
+        <!-- Hero Section -->
+        <div class="mt-8 mb-12">
+          <div class="relative aspect-[16/9] overflow-hidden bg-neutral-100 mb-8">
+            <img 
+              src="https://images.unsplash.com/photo-1549880181-56a44cf4a9a7?q=80&w=2000&auto=format&fit=crop" 
+              alt="Art Collective Barcelona studio with students painting" 
+              class="h-full w-full object-cover"
+            />
+            <div class="absolute inset-0 bg-black bg-opacity-40 flex items-center justify-center">
+              <div class="text-center text-white px-6">
+                <h3 class="text-2xl md:text-4xl font-serif mb-4">At Art Collective Barcelona, we believe art is for everyone</h3>
+                <p class="text-lg mb-6 max-w-2xl">A space where creativity, community, and technique come together.</p>
+                <button class="px-8 py-3 bg-white text-neutral-900 hover:bg-neutral-100 transition-colors">
+                  Join a Workshop
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Our Story -->
+        <div class="mb-12">
+          <div class="grid md:grid-cols-2 gap-8 items-center">
+            <div>
+              <h3 class="text-2xl font-serif mb-4">Our Story</h3>
+              <p class="text-neutral-600 mb-4">
+                Art Collective Barcelona was born from the belief that art shouldn't feel exclusive. After years of studying and teaching, we wanted to create a welcoming space where people can learn classical techniques, explore creativity, and connect with others through painting.
+              </p>
+              <p class="text-neutral-600">
+                Whether you're a beginner or an experienced artist, every session is designed to be immersive, inspiring, and fun.
+              </p>
+            </div>
+            <div class="relative aspect-[4/3] overflow-hidden bg-neutral-100">
+              <img 
+                src="https://images.unsplash.com/photo-1526318472351-c75fcf070305?q=80&w=1600&auto=format&fit=crop" 
+                alt="Happy students painting together in workshop" 
+                class="h-full w-full object-cover"
+              />
+            </div>
+          </div>
+        </div>
+
+        <!-- About the Founder: Tanveer -->
+        <div class="mb-12">
+          <div class="grid md:grid-cols-2 gap-8 items-center">
+            <div class="relative aspect-[4/5] overflow-hidden bg-neutral-100">
+              <img 
+                src="https://images.unsplash.com/photo-1514516870926-2059891030ad?q=80&w=1600&auto=format&fit=crop" 
+                alt="Tanveer Oberai, founder of Art Collective Barcelona" 
+                class="h-full w-full object-cover"
+              />
+            </div>
+            <div>
+              <h3 class="text-2xl font-serif mb-4">About the Founder: Tanveer Oberai</h3>
+              <p class="text-neutral-600 mb-4">
+                Tanveer Oberai is a classically trained artist from Mumbai, based in Barcelona. After training in contemporary art at Srishti Institute (India) and completing a 3-year program at the Barcelona Academy of Art, Tanveer mastered oil painting, drawing, and classical atelier techniques.
+              </p>
+              <p class="text-neutral-600 mb-6">
+                His work blends realism with modern storytelling, exploring themes of light, form, and liberation from thought. As the founder of Art Collective Barcelona, Tanveer brings his passion for teaching to every workshop — guiding students individually, no matter their level, and making art accessible to everyone.
+              </p>
+              <div class="flex gap-4">
+                <button class="px-6 py-2 border border-neutral-900 hover:bg-neutral-900 hover:text-white transition-colors">
+                  Shop Tanveer's Prints
+                </button>
+                <button class="px-6 py-2 border border-neutral-300 hover:border-neutral-900 transition-colors">
+                  Commission a Painting
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Mission & Vision -->
+        <div class="mb-12">
+          <div class="grid md:grid-cols-2 gap-8">
+            <div class="text-center">
+              <div class="text-4xl mb-4">🎯</div>
+              <h3 class="text-xl font-serif mb-3">Our Mission</h3>
+              <p class="text-neutral-600">
+                To make classical and contemporary art accessible through hands-on workshops and classes in Barcelona.
+              </p>
+            </div>
+            <div class="text-center">
+              <div class="text-4xl mb-4">👁️</div>
+              <h3 class="text-xl font-serif mb-3">Our Vision</h3>
+              <p class="text-neutral-600">
+                To create a thriving art community where anyone can discover the joy of painting.
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Our Values -->
+        <div class="mb-12">
+          <h3 class="text-2xl font-serif mb-6 text-center">Our Values</h3>
+          <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
+            <div class="text-center">
+              <div class="text-4xl mb-3">🎨</div>
+              <h4 class="font-semibold mb-2">Art is for Everyone</h4>
+              <p class="text-neutral-600 text-sm">All skill levels welcome.</p>
+            </div>
+            <div class="text-center">
+              <div class="text-4xl mb-3">✋</div>
+              <h4 class="font-semibold mb-2">Hands-On Learning</h4>
+              <p class="text-neutral-600 text-sm">Learn by doing, not just watching.</p>
+            </div>
+            <div class="text-center">
+              <div class="text-4xl mb-3">🤝</div>
+              <h4 class="font-semibold mb-2">Community & Collaboration</h4>
+              <p class="text-neutral-600 text-sm">Create and grow together.</p>
+            </div>
+            <div class="text-center">
+              <div class="text-4xl mb-3">❤️</div>
+              <h4 class="font-semibold mb-2">Excellence & Passion</h4>
+              <p class="text-neutral-600 text-sm">Every session led with care and dedication.</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Why Choose Us -->
+        <div class="mb-12">
+          <h3 class="text-2xl font-serif mb-6 text-center">Why Choose Us</h3>
+          <div class="grid md:grid-cols-3 gap-6">
+            <div class="text-center">
+              <div class="text-2xl mb-2">✔️</div>
+              <p class="text-neutral-600">Small, intimate workshops in a real artist's studio</p>
+            </div>
+            <div class="text-center">
+              <div class="text-2xl mb-2">✔️</div>
+              <p class="text-neutral-600">Personal critiques for every student</p>
+            </div>
+            <div class="text-center">
+              <div class="text-2xl mb-2">✔️</div>
+              <p class="text-neutral-600">Learn timeless techniques in a relaxed, modern way</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- CTA Footer -->
+        <div class="text-center bg-neutral-900 text-white p-8 rounded-lg">
+          <h3 class="text-2xl font-serif mb-4">Ready to Experience the Joy of Painting?</h3>
+          <p class="text-neutral-300 mb-6">Join us in our studio in Poblenou, Barcelona.</p>
+          <div class="flex gap-4 justify-center">
+            <button class="px-8 py-3 bg-white text-neutral-900 hover:bg-neutral-100 transition-colors">
+              Book a Workshop
+            </button>
+            <button class="px-8 py-3 border border-white text-white hover:bg-white hover:text-neutral-900 transition-colors">
+              Explore Classes
+            </button>
+          </div>
+        </div>
+      </section>
+
+      <section id="sale" class="container max-w-[1400px] py-16 border-t">
+        <!-- Header -->
+        <div class="text-center mb-12">
+          <h2 class="text-4xl md:text-5xl font-serif mb-4" style="color: #FF6B35;">Shop Original Art & Prints</h2>
+          <p class="text-lg text-neutral-600 max-w-2xl mx-auto">
+            Explore Tanveer Oberai's curated works available for purchase. Each piece is unique, hand-crafted, and ships worldwide.
+          </p>
+        </div>
+
+        <!-- Responsive Grid Gallery -->
+        <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-5 gap-4 mb-12">
+          <!-- Artwork B1 -->
+          <div class="group cursor-pointer artwork-card" data-artwork="b1">
+            <div class="relative aspect-[4/5] overflow-hidden bg-neutral-100 rounded-lg">
+              <img 
+                src="https://images.unsplash.com/photo-1549880181-56a44cf4a9a7?q=80&w=1600&auto=format&fit=crop" 
+                alt="Savone - Portrait study" 
+                class="h-full w-full object-cover transition-transform duration-500 group-hover:scale-105"
+              />
+              <!-- Semi-transparent overlay on hover -->
+              <div class="absolute inset-0 bg-gradient-to-t from-black/60 via-black/20 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex flex-col justify-between p-4">
+                <div class="text-right">
+                  <span class="text-white font-bold text-lg">B1</span>
+                </div>
+                <div>
+                  <h3 class="text-white font-bold text-lg mb-2">Savone</h3>
+                  <button class="px-4 py-2 bg-white text-neutral-900 rounded text-sm font-medium hover:bg-neutral-100 transition-colors">
+                    View Details
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Artwork B2 -->
+          <div class="group cursor-pointer artwork-card" data-artwork="b2">
+            <div class="relative aspect-[4/5] overflow-hidden bg-neutral-100 rounded-lg">
+              <img 
+                src="https://images.unsplash.com/photo-1526318472351-c75fcf070305?q=80&w=1600&auto=format&fit=crop" 
+                alt="Portraits - Character studies" 
+                class="h-full w-full object-cover transition-transform duration-500 group-hover:scale-105"
+              />
+              <div class="absolute inset-0 bg-gradient-to-t from-black/60 via-black/20 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex flex-col justify-between p-4">
+                <div class="text-right">
+                  <span class="text-white font-bold text-lg">B2</span>
+                </div>
+                <div>
+                  <h3 class="text-white font-bold text-lg mb-2">Portraits</h3>
+                  <button class="px-4 py-2 bg-white text-neutral-900 rounded text-sm font-medium hover:bg-neutral-100 transition-colors">
+                    View Details
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Artwork B3 -->
+          <div class="group cursor-pointer artwork-card" data-artwork="b3">
+            <div class="relative aspect-[4/5] overflow-hidden bg-neutral-100 rounded-lg">
+              <img 
+                src="https://images.unsplash.com/photo-1514516870926-2059891030ad?q=80&w=1600&auto=format&fit=crop" 
+                alt="Maria Studies Resortwear 2025" 
+                class="h-full w-full object-cover transition-transform duration-500 group-hover:scale-105"
+              />
+              <div class="absolute inset-0 bg-gradient-to-t from-black/60 via-black/20 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex flex-col justify-between p-4">
+                <div class="text-right">
+                  <span class="text-white font-bold text-lg">B3</span>
+                </div>
+                <div>
+                  <h3 class="text-white font-bold text-lg mb-2">Maria Studies Resortwear 2025</h3>
+                  <button class="px-4 py-2 bg-white text-neutral-900 rounded text-sm font-medium hover:bg-neutral-100 transition-colors">
+                    View Details
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Artwork B4 -->
+          <div class="group cursor-pointer artwork-card" data-artwork="b4">
+            <div class="relative aspect-[4/5] overflow-hidden bg-neutral-100 rounded-lg">
+              <img 
+                src="https://images.unsplash.com/photo-1549880338-65ddcdfd017b?q=80&w=1600&auto=format&fit=crop" 
+                alt="VHOVE Cover" 
+                class="h-full w-full object-cover transition-transform duration-500 group-hover:scale-105"
+              />
+              <div class="absolute inset-0 bg-gradient-to-t from-black/60 via-black/20 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex flex-col justify-between p-4">
+                <div class="text-right">
+                  <span class="text-white font-bold text-lg">B4</span>
+                </div>
+                <div>
+                  <h3 class="text-white font-bold text-lg mb-2">VHOVE Cover</h3>
+                  <button class="px-4 py-2 bg-white text-neutral-900 rounded text-sm font-medium hover:bg-neutral-100 transition-colors">
+                    View Details
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Artwork B5 -->
+          <div class="group cursor-pointer artwork-card" data-artwork="b5">
+            <div class="relative aspect-[4/5] overflow-hidden bg-neutral-100 rounded-lg">
+              <img 
+                src="https://images.unsplash.com/photo-1578662996442-48f60103fc96?q=80&w=1600&auto=format&fit=crop" 
+                alt="Kids Collection 2025" 
+                class="h-full w-full object-cover transition-transform duration-500 group-hover:scale-105"
+              />
+              <div class="absolute inset-0 bg-gradient-to-t from-black/60 via-black/20 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex flex-col justify-between p-4">
+                <div class="text-right">
+                  <span class="text-white font-bold text-lg">B5</span>
+                </div>
+                <div>
+                  <h3 class="text-white font-bold text-lg mb-2">Kids Collection 2025</h3>
+                  <button class="px-4 py-2 bg-white text-neutral-900 rounded text-sm font-medium hover:bg-neutral-100 transition-colors">
+                    View Details
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Commission CTA -->
+        <div class="text-center bg-neutral-50 p-8 rounded-lg">
+          <h3 class="text-2xl font-serif mb-4">Looking for something custom?</h3>
+          <p class="text-neutral-600 mb-6">Commission a personalized artwork tailored to your vision.</p>
+          <button class="px-8 py-3 bg-neutral-900 text-white hover:bg-neutral-800 transition-colors">
+            Commission a Work
+          </button>
+        </div>
+      </section>
+
+      <!-- Artwork Details Modal -->
+      <div id="artwork-modal" class="fixed inset-0 bg-black bg-opacity-50 z-50 hidden flex items-center justify-center p-4">
+        <div class="bg-white rounded-lg max-w-4xl w-full max-h-[90vh] overflow-y-auto">
+          <div class="grid md:grid-cols-2 gap-8 p-8">
+            <!-- Image -->
+            <div class="relative aspect-[4/5] overflow-hidden bg-neutral-100 rounded-lg">
+              <img id="modal-image" src="" alt="" class="h-full w-full object-cover" />
+            </div>
+            
+            <!-- Details -->
+            <div>
+              <div class="flex justify-between items-start mb-4">
+                <h2 id="modal-title" class="text-2xl font-serif"></h2>
+                <button id="close-modal" class="text-neutral-400 hover:text-neutral-600">
+                  <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"></path>
+                  </svg>
+                </button>
+              </div>
+              
+              <div id="modal-details" class="space-y-4 mb-6">
+                <!-- Details will be populated by JavaScript -->
+              </div>
+              
+              <div class="border-t pt-6">
+                <div class="flex items-center justify-between mb-4">
+                  <span class="text-2xl font-bold" id="modal-price"></span>
+                  <span class="text-sm text-neutral-500">Free worldwide shipping</span>
+                </div>
+                
+                <button class="w-full px-6 py-3 bg-neutral-900 text-white hover:bg-neutral-800 transition-colors mb-4">
+                  Purchase Now
+                </button>
+                
+                <div class="text-sm text-neutral-600">
+                  <p class="mb-2">✓ 30-day return policy</p>
+                  <p class="mb-2">✓ Certificate of authenticity included</p>
+                  <p>✓ Professional packaging & insurance</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <section id="testimonials" class="container max-w-[1200px] py-16 border-t">
+        <h2 class="text-2xl md:text-3xl font-serif">Testimonials</h2>
+        <p class="mt-4 max-w-2xl text-neutral-600">What our students and collectors say about us.</p>
+      </section>
+
+      <section id="contact" class="container max-w-[1200px] py-16 border-t">
+        <h2 class="text-2xl md:text-3xl font-serif">Contact</h2>
+        <p class="mt-4 text-neutral-600">Email: <a href="mailto:hello@example.com" class="underline">hello@example.com</a></p>
+        <form class="mt-6 max-w-md">
+          <label for="email" class="block text-sm text-neutral-700">Join our newsletter</label>
+          <div class="mt-2 flex gap-2">
+            <input id="email" type="email" required placeholder="you@example.com" class="w-full border border-neutral-300 px-3 py-2 focus:outline-none focus:ring-1 focus:ring-neutral-900" />
+            <button type="submit" class="px-4 py-2 border border-neutral-900">Subscribe</button>
+          </div>
+        </form>
+      </section>
+    </main>
+
+    <footer class="border-t">
+      <div class="container max-w-[1200px] py-8 text-sm text-neutral-600 flex flex-col md:flex-row justify-between gap-4">
+        <p>© <span id="year"></span> ACB</p>
+        <p class="text-neutral-500">New works, exhibitions, and events</p>
+      </div>
+    </footer>
+
+    <script>
+      document.getElementById('year').textContent = new Date().getFullYear();
+      (function() {
+        // Basic typing effect for splash lines, then fade out overlay
+        const byId = (id) => document.getElementById(id);
+        const lines = [
+          { id: 'line1', text: 'ART' },
+          { id: 'line2', text: 'CHANGES' },
+          { id: 'line3', text: 'EVERYTHING' }
+        ];
+        const tagline = { id: 'tagline', text: '& MAKES LIFE MORE MEANINGFUL.' };
+
+        // Create typing sound effect
+        const playTypingSound = () => {
+          const audioContext = new (window.AudioContext || window.webkitAudioContext)();
+          const oscillator = audioContext.createOscillator();
+          const gainNode = audioContext.createGain();
+          
+          oscillator.connect(gainNode);
+          gainNode.connect(audioContext.destination);
+          
+          oscillator.frequency.setValueAtTime(800, audioContext.currentTime);
+          oscillator.type = 'sine';
+          
+          gainNode.gain.setValueAtTime(0.1, audioContext.currentTime);
+          gainNode.gain.exponentialRampToValueAtTime(0.01, audioContext.currentTime + 0.1);
+          
+          oscillator.start(audioContext.currentTime);
+          oscillator.stop(audioContext.currentTime + 0.1);
+        };
+
+        const typeText = (el, text, speed) => new Promise((resolve) => {
+          let idx = 0;
+          const type = () => {
+            el.innerHTML = text.substring(0, idx + 1);
+            playTypingSound(); // Play sound for each character
+            idx++;
+            if (idx < text.length) {
+              setTimeout(type, speed);
+            } else {
+              resolve();
+            }
+          };
+          type();
+        });
+
+        const start = async () => {
+          document.body.classList.add('overflow-hidden');
+          for (const l of lines) {
+            await typeText(byId(l.id), l.text, 90);
+            await new Promise(r => setTimeout(r, 200));
+          }
+          await typeText(byId(tagline.id), tagline.text, 30);
+          await new Promise(r => setTimeout(r, 350));
+
+          const splash = byId('splash');
+          splash.style.transition = 'opacity 600ms ease';
+          splash.style.opacity = '0';
+          setTimeout(() => {
+            splash.style.display = 'none';
+            document.body.classList.remove('overflow-hidden');
+          }, 650);
+        };
+
+        if (document.readyState === 'loading') {
+          document.addEventListener('DOMContentLoaded', start);
+        } else {
+          start();
+        }
+      })();
+
+      // Artwork Modal Functionality
+      const artworkData = {
+        b1: {
+          title: "Savone",
+          image: "https://images.unsplash.com/photo-1549880181-56a44cf4a9a7?q=80&w=1600&auto=format&fit=crop",
+          price: "€850",
+          details: {
+            "Medium": "Oil on canvas",
+            "Size": "60cm × 80cm",
+            "Year": "2024",
+            "Concept": "A study of light and shadow in portraiture, exploring the interplay between classical technique and contemporary expression."
+          }
+        },
+        b2: {
+          title: "Portraits",
+          image: "https://images.unsplash.com/photo-1526318472351-c75fcf070305?q=80&w=1600&auto=format&fit=crop",
+          price: "€1,200",
+          details: {
+            "Medium": "Mixed media on canvas",
+            "Size": "80cm × 100cm",
+            "Year": "2024",
+            "Concept": "Character studies exploring the duality of human nature through expressive brushwork and bold color choices."
+          }
+        },
+        b3: {
+          title: "Maria Studies Resortwear 2025",
+          image: "https://images.unsplash.com/photo-1514516870926-2059891030ad?q=80&w=1600&auto=format&fit=crop",
+          price: "€1,500",
+          details: {
+            "Medium": "Oil on canvas",
+            "Size": "100cm × 120cm",
+            "Year": "2025",
+            "Concept": "Fashion-forward portrait study for resortwear collection, blending contemporary style with classical painting techniques."
+          }
+        },
+        b4: {
+          title: "VHOVE Cover",
+          image: "https://images.unsplash.com/photo-1549880338-65ddcdfd017b?q=80&w=1600&auto=format&fit=crop",
+          price: "€950",
+          details: {
+            "Medium": "Digital art, limited print",
+            "Size": "50cm × 70cm",
+            "Year": "2024",
+            "Concept": "Magazine cover artwork featuring ethereal portraiture with mystical elements and flowing composition."
+          }
+        },
+        b5: {
+          title: "Kids Collection 2025",
+          image: "https://images.unsplash.com/photo-1578662996442-48f60103fc96?q=80&w=1600&auto=format&fit=crop",
+          price: "€650",
+          details: {
+            "Medium": "Acrylic on canvas",
+            "Size": "60cm × 60cm",
+            "Year": "2025",
+            "Concept": "Abstract expressionist piece exploring childhood wonder through vibrant colors and dynamic brushstrokes."
+          }
+        }
+      };
+
+      // Modal elements
+      const modal = document.getElementById('artwork-modal');
+      const modalImage = document.getElementById('modal-image');
+      const modalTitle = document.getElementById('modal-title');
+      const modalPrice = document.getElementById('modal-price');
+      const modalDetails = document.getElementById('modal-details');
+      const closeModal = document.getElementById('close-modal');
+
+      // Open modal function
+      function openModal(artworkId) {
+        const artwork = artworkData[artworkId];
+        if (!artwork) return;
+
+        modalImage.src = artwork.image;
+        modalImage.alt = artwork.title;
+        modalTitle.textContent = artwork.title;
+        modalPrice.textContent = artwork.price;
+
+        // Populate details
+        modalDetails.innerHTML = '';
+        Object.entries(artwork.details).forEach(([key, value]) => {
+          const detailDiv = document.createElement('div');
+          detailDiv.innerHTML = `
+            <div class="flex justify-between">
+              <span class="font-medium text-neutral-700">${key}:</span>
+              <span class="text-neutral-600">${value}</span>
+            </div>
+          `;
+          modalDetails.appendChild(detailDiv);
+        });
+
+        modal.classList.remove('hidden');
+        document.body.style.overflow = 'hidden';
+      }
+
+      // Close modal function
+      function closeModalFunc() {
+        modal.classList.add('hidden');
+        document.body.style.overflow = 'auto';
+      }
+
+      // Event listeners
+      document.querySelectorAll('.artwork-card').forEach(card => {
+        card.addEventListener('click', () => {
+          const artworkId = card.getAttribute('data-artwork');
+          openModal(artworkId);
+        });
+      });
+
+      closeModal.addEventListener('click', closeModalFunc);
+      modal.addEventListener('click', (e) => {
+        if (e.target === modal) {
+          closeModalFunc();
+        }
+      });
+
+      // Close modal with Escape key
+      document.addEventListener('keydown', (e) => {
+        if (e.key === 'Escape' && !modal.classList.contains('hidden')) {
+          closeModalFunc();
+        }
+      });
+    </script>
+  </body>
+  </html>
